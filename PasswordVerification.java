@@ -7,49 +7,12 @@ public class PasswordVerification {
 		
 		PasswordVerification pv = new PasswordVerification ();
 		pv.passwordVerify();
-//		pv.charts();
-//		pv.chat();
+
 		
 
 	}
-	private void charts() {
-		String st = "jeeva";
-		int cap =0, sml =0;
-		boolean boo= false;
-		for(int i =0;i<st.length();i++)
-			{
-			
-			 if(st.charAt(0) >='A' && st.charAt(0) <= 'Z')
-			 {
-				boo = true;
-			 cap++; }
-			 else
-			 {
-				 System.out.println("Enter first caps ");
-				 break;
-			 }
-				 
-			if (st.charAt(i) >= 'a' && st.charAt(i) <= 'z')
-				sml++;
-			
-		}
-		
-		System.out.println(boo+" "+ cap + " "+sml);
-		
-	}
 
-	
-
-	private void chat() {
 		
-		char ch[] = {' ','`','¬','!','"','£','$','%','^','&','*','(',')','-','_','=','+','{','[','}',']','#','~',
-				';',':','@','<',',','.','>','€'};
-		
-		System.out.println(ch.length);
-		
-	}
-
-	
 	private void passwordVerify() {			
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your password above 8 characters ");
